@@ -1,0 +1,18 @@
+.package {
+	type 0 : integer
+	session 1: integer
+	ud 2 : string
+}
+
+keep_alive 1 {}
+
+user_authen 2 {
+	request {
+		user_id 0 : integer
+		user_token 1 : string
+		login_type 2 : integer
+	}
+	response {
+		result 0:integer
+	}
+}
